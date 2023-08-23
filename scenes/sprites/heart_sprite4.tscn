@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://86eujq0ebr53"]
+
+[ext_resource type="Texture2D" uid="uid://prnyjwpixoqi" path="res://assets/cardsMedium_tilemap.png" id="1_f1tpx"]
+
+[node name="HeartFourSprite" type="Sprite2D"]
+texture = ExtResource("1_f1tpx")
+centered = false
+region_enabled = true
+region_rect = Rect2(105, 2, 20, 29)

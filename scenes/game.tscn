@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://cocvepd4tyx1v"]
+
+[ext_resource type="Script" path="res://scenes/game.gd" id="1_t3dmx"]
+[ext_resource type="PackedScene" uid="uid://d0bfmtis63u80" path="res://scenes/entities/card.tscn" id="2_2bq3y"]
+
+[sub_resource type="Gradient" id="Gradient_tletu"]
+offsets = PackedFloat32Array(0, 0.0479042, 0.808383, 1)
+colors = PackedColorArray(0, 0.200369, 0, 1, 0, 0.24758, 0, 1, 0.180344, 0.617648, 0.254149, 1, 0.275579, 0.916687, 0.405008, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_6xrct"]
+gradient = SubResource("Gradient_tletu")
+width = 189
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_t3dmx")
+
+[node name="Background" type="Sprite2D" parent="."]
+scale = Vector2(6.13757, 656)
+texture = SubResource("GradientTexture1D_6xrct")
+centered = false
+
+[node name="Card" parent="." instance=ExtResource("2_2bq3y")]
+position = Vector2(496, 168)
+card_type = 9

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dya0eh2uoyrlg"]
+
+[ext_resource type="Texture2D" uid="uid://prnyjwpixoqi" path="res://assets/cardsMedium_tilemap.png" id="1_gt25p"]
+
+[node name="DeckSprite" type="Sprite2D"]
+texture = ExtResource("1_gt25p")
+centered = false
+region_enabled = true
+region_rect = Rect2(39, 2, 20, 29)
