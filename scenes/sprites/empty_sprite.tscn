@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://prnyjwpixoqi" path="res://assets/cardsMedium_tilemap.png" id="1_mgm65"]
 
-[node name="DeckSprite" type="Sprite2D"]
+[node name="EmptySprite" type="Sprite2D"]
 texture = ExtResource("1_mgm65")
 centered = false
 region_enabled = true
-region_rect = Rect2(468, 35, 20, 29)
+region_rect = Rect2(6, 266, 20, 29)

@@ -19,6 +19,10 @@ scale = Vector2(6.13757, 656)
 texture = SubResource("GradientTexture1D_6xrct")
 centered = false
 
-[node name="Card" parent="." instance=ExtResource("2_2bq3y")]
-position = Vector2(496, 168)
+[node name="Card1" parent="." instance=ExtResource("2_2bq3y")]
+position = Vector2(200, 96)
 card_type = 9
+
+[node name="Card" parent="." instance=ExtResource("2_2bq3y")]
+position = Vector2(640, 160)
+card_type = 1

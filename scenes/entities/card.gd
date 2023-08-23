@@ -3,6 +3,7 @@ class_name Card
 
 enum CardType {
 	Deck,
+	Empty,
 	Heart,
 	HeartAce,
 	HeartTwo,
@@ -49,15 +50,19 @@ func _on_mouse_entered():
 	is_mouse_over = true
 	if not is_grabbed:
 		mouse_grab_offset = (position - get_global_mouse_position()) / Vector2(2,2)
+		print_debug("New Mouse Offset: {0}".format([mouse_grab_offset]))
 
 
 func _on_mouse_exited():
 	is_mouse_over = false
+	print_debug("Old Mouse Offset: {0}".format([mouse_grab_offset]))
 
 
 func _set_card():
 	var new_sprite: Sprite2D
 	match card_type:
+		CardType.Empty:
+			new_sprite = load("res://scenes/sprites/empty_sprite.tscn").instantiate()
 		CardType.Heart:
 			new_sprite = load("res://scenes/sprites/heart_sprite0.tscn").instantiate()
 		CardType.HeartAce:
